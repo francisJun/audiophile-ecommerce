@@ -1,0 +1,522 @@
+[
+  {
+    "id": 1,
+    "slug": "xx99-mark-two-headphones",
+    "name": "XX99 Mark II Headphones",
+    "image": {
+      "mobile": "/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg",
+      "tablet": "/assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
+      "desktop": "/assets/product-xx99-mark-two-headphones/desktop/image-product.jpg"
+    },
+    "category": "headphones",
+    "categoryImage": {
+      "mobile": "/assets/category-headphones/mobile/image-xx99-mark-two.jpg",
+      "tablet": "/assets/category-headphones/tablet/image-xx99-mark-two.jpg",
+      "desktop": "/assets/category-headphones/desktop/image-xx99-mark-two.jpg"
+    },
+    "new": true,
+    "price": 2999,
+    "description": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your listening experience delivering unmatched clarity and precision.",
+    "features": "Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. The advanced noise-cancelling technology effectively minimizes external distractions. \n\nWith the latest Bluetooth 5.0 connectivity, you can seamlessly connect to your devices and enjoy wireless audio up to 30 feet. The built-in microphone allows for clear communication during calls.",
+    "includes": [
+      {
+        "quantity": 1,
+        "item": "Headphones Unit"
+      },
+      {
+        "quantity": 2,
+        "item": "Replacement Earcups"
+      },
+      {
+        "quantity": 1,
+        "item": "User Manual"
+      },
+      {
+        "quantity": 1,
+        "item": "3.5mm Audio Cable"
+      },
+      {
+        "quantity": 1,
+        "item": "Travel Pouch"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "/assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg",
+        "tablet": "/assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg",
+        "desktop": "/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg"
+      },
+      "second": {
+        "mobile": "/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg",
+        "tablet": "/assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg",
+        "desktop": "/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg"
+      },
+      "third": {
+        "mobile": "/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg",
+        "tablet": "/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg",
+        "desktop": "/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
+      }
+    },
+    "others": [
+      {
+        "slug": "xx99-mark-one-headphones",
+        "name": "XX99 Mark I",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+        }
+      },
+      {
+        "slug": "xx59-headphones",
+        "name": "XX59",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx59-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx59-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx59-headphones.jpg"
+        }
+      },
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-zx9-speaker.jpg",
+          "tablet": "/assets/shared/tablet/image-zx9-speaker.jpg",
+          "desktop": "/assets/shared/desktop/image-zx9-speaker.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "xx99-mark-one-headphones",
+    "name": "XX99 Mark I Headphones",
+    "image": {
+      "mobile": "/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
+      "tablet": "/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
+      "desktop": "/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
+    },
+    "category": "headphones",
+    "categoryImage": {
+      "mobile": "/assets/category-headphones/mobile/image-xx99-mark-one.jpg",
+      "tablet": "/assets/category-headphones/tablet/image-xx99-mark-one.jpg",
+      "desktop": "/assets/category-headphones/desktop/image-xx99-mark-one.jpg"
+    },
+    "new": false,
+    "price": 1750,
+    "description": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate sound for the most discerning audio enthusiasts. It boasts high-quality materials and an ergonomic design that guarantees exceptional comfort, even during long listening sessions.",
+    "features": "These headphones have been created from durable, high-quality materials. Boasting an ergonomic design, these headphones guarantee exceptional comfort for long listening sessions. Advanced noise-cancelling technology minimizes external distractions, while the built-in microphone allows for clear communication during calls.",
+    "includes": [
+      {
+        "quantity": 1,
+        "item": "Headphones Unit"
+      },
+      {
+        "quantity": 2,
+        "item": "Replacement Earcups"
+      },
+      {
+        "quantity": 1,
+        "item": "User Manual"
+      },
+      {
+        "quantity": 1,
+        "item": "3.5mm Audio Cable"
+      },
+      {
+        "quantity": 1,
+        "item": "Travel Pouch"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "/assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg",
+        "tablet": "/assets/product-xx99-mark-one-headphones/tablet/image-gallery-1.jpg",
+        "desktop": "/assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg"
+      },
+      "second": {
+        "mobile": "/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg",
+        "tablet": "/assets/product-xx99-mark-one-headphones/tablet/image-gallery-2.jpg",
+        "desktop": "/assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg"
+      },
+      "third": {
+        "mobile": "/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg",
+        "tablet": "/assets/product-xx99-mark-one-headphones/tablet/image-gallery-3.jpg",
+        "desktop": "/assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg"
+      }
+    },
+    "others": [
+      {
+        "slug": "xx99-mark-two-headphones",
+        "name": "XX99 Mark II",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg"
+        }
+      },
+      {
+        "slug": "xx59-headphones",
+        "name": "XX59",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx59-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx59-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx59-headphones.jpg"
+        }
+      },
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-zx9-speaker.jpg",
+          "tablet": "/assets/shared/tablet/image-zx9-speaker.jpg",
+          "desktop": "/assets/shared/desktop/image-zx9-speaker.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "xx59-headphones",
+    "name": "XX59 Headphones",
+    "image": {
+      "mobile": "/assets/product-xx59-headphones/mobile/image-product.jpg",
+      "tablet": "/assets/product-xx59-headphones/tablet/image-product.jpg",
+      "desktop": "/assets/product-xx59-headphones/desktop/image-product.jpg"
+    },
+    "category": "headphones",
+    "categoryImage": {
+      "mobile": "/assets/category-headphones/mobile/image-xx59.jpg",
+      "tablet": "/assets/category-headphones/tablet/image-xx59.jpg",
+      "desktop": "/assets/category-headphones/desktop/image-xx59.jpg"
+    },
+    "new": false,
+    "price": 899,
+    "description": "Enjoy your audio content with the XX59 headphones. These ergonomic headphones offer exceptional comfort and a wide range of features.",
+    "features": "The XX59 headphones are designed for comfort and convenience. The soft earcups provide a snug fit, while the adjustable headband ensures a secure and comfortable fit for all head sizes. The built-in microphone allows for clear communication during calls.",
+    "includes": [
+      {
+        "quantity": 1,
+        "item": "Headphones Unit"
+      },
+      {
+        "quantity": 2,
+        "item": "Replacement Earcups"
+      },
+      {
+        "quantity": 1,
+        "item": "User Manual"
+      },
+      {
+        "quantity": 1,
+        "item": "3.5mm Audio Cable"
+      },
+      {
+        "quantity": 1,
+        "item": "Travel Pouch"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "/assets/product-xx59-headphones/mobile/image-gallery-1.jpg",
+        "tablet": "/assets/product-xx59-headphones/tablet/image-gallery-1.jpg",
+        "desktop": "/assets/product-xx59-headphones/desktop/image-gallery-1.jpg"
+      },
+      "second": {
+        "mobile": "/assets/product-xx59-headphones/mobile/image-gallery-2.jpg",
+        "tablet": "/assets/product-xx59-headphones/tablet/image-gallery-2.jpg",
+        "desktop": "/assets/product-xx59-headphones/desktop/image-gallery-2.jpg"
+      },
+      "third": {
+        "mobile": "/assets/product-xx59-headphones/mobile/image-gallery-3.jpg",
+        "tablet": "/assets/product-xx59-headphones/tablet/image-gallery-3.jpg",
+        "desktop": "/assets/product-xx59-headphones/desktop/image-gallery-3.jpg"
+      }
+    },
+    "others": [
+      {
+        "slug": "xx99-mark-two-headphones",
+        "name": "XX99 Mark II",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg"
+        }
+      },
+      {
+        "slug": "xx99-mark-one-headphones",
+        "name": "XX99 Mark I",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+        }
+      },
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-zx9-speaker.jpg",
+          "tablet": "/assets/shared/tablet/image-zx9-speaker.jpg",
+          "desktop": "/assets/shared/desktop/image-zx9-speaker.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "zx9-speaker",
+    "name": "ZX9 Speaker",
+    "image": {
+      "mobile": "/assets/product-zx9-speaker/mobile/image-product.jpg",
+      "tablet": "/assets/product-zx9-speaker/tablet/image-product.jpg",
+      "desktop": "/assets/product-zx9-speaker/desktop/image-product.jpg"
+    },
+    "category": "speakers",
+    "categoryImage": {
+      "mobile": "/assets/category-speakers/mobile/image-zx9.jpg",
+      "tablet": "/assets/category-speakers/tablet/image-zx9.jpg",
+      "desktop": "/assets/category-speakers/desktop/image-zx9.jpg"
+    },
+    "new": true,
+    "price": 4500,
+    "description": "Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound. The ZX9 speaker is the pinnacle of audio excellence.",
+    "features": "The ZX9 speaker is designed to deliver exceptional audio quality. The high-quality materials and advanced technology ensure a clear and accurate sound reproduction. The built-in amplifier provides ample power for a truly immersive listening experience.",
+    "includes": [
+      {
+        "quantity": 2,
+        "item": "Speaker Unit"
+      },
+      {
+        "quantity": 2,
+        "item": "Speaker Cloth Panel"
+      },
+      {
+        "quantity": 1,
+        "item": "User Manual"
+      },
+      {
+        "quantity": 1,
+        "item": "Acoustic Foam"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "/assets/product-zx9-speaker/mobile/image-gallery-1.jpg",
+        "tablet": "/assets/product-zx9-speaker/tablet/image-gallery-1.jpg",
+        "desktop": "/assets/product-zx9-speaker/desktop/image-gallery-1.jpg"
+      },
+      "second": {
+        "mobile": "/assets/product-zx9-speaker/mobile/image-gallery-2.jpg",
+        "tablet": "/assets/product-zx9-speaker/tablet/image-gallery-2.jpg",
+        "desktop": "/assets/product-zx9-speaker/desktop/image-gallery-2.jpg"
+      },
+      "third": {
+        "mobile": "/assets/product-zx9-speaker/mobile/image-gallery-3.jpg",
+        "tablet": "/assets/product-zx9-speaker/tablet/image-gallery-3.jpg",
+        "desktop": "/assets/product-zx9-speaker/desktop/image-gallery-3.jpg"
+      }
+    },
+    "others": [
+      {
+        "slug": "zx7-speaker",
+        "name": "ZX7 Speaker",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-zx7-speaker.jpg",
+          "tablet": "/assets/shared/tablet/image-zx7-speaker.jpg",
+          "desktop": "/assets/shared/desktop/image-zx7-speaker.jpg"
+        }
+      },
+      {
+        "slug": "xx99-mark-two-headphones",
+        "name": "XX99 Mark II",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg"
+        }
+      },
+      {
+        "slug": "xx59-headphones",
+        "name": "XX59",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx59-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx59-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx59-headphones.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "zx7-speaker",
+    "name": "ZX7 Speaker",
+    "image": {
+      "mobile": "/assets/product-zx7-speaker/mobile/image-product.jpg",
+      "tablet": "/assets/product-zx7-speaker/tablet/image-product.jpg",
+      "desktop": "/assets/product-zx7-speaker/desktop/image-product.jpg"
+    },
+    "category": "speakers",
+    "categoryImage": {
+      "mobile": "/assets/category-speakers/mobile/image-zx7.jpg",
+      "tablet": "/assets/category-speakers/tablet/image-zx7.jpg",
+      "desktop": "/assets/category-speakers/desktop/image-zx7.jpg"
+    },
+    "new": false,
+    "price": 3500,
+    "description": "Experience immersive sound with the ZX7 speaker. This speaker delivers exceptional audio quality and a sleek design.",
+    "features": "The ZX7 speaker is designed to deliver exceptional audio quality. The high-quality materials and advanced technology ensure a clear and accurate sound reproduction. The built-in amplifier provides ample power for a truly immersive listening experience.",
+    "includes": [
+      {
+        "quantity": 2,
+        "item": "Speaker Unit"
+      },
+      {
+        "quantity": 2,
+        "item": "Speaker Cloth Panel"
+      },
+      {
+        "quantity": 1,
+        "item": "User Manual"
+      },
+      {
+        "quantity": 1,
+        "item": "Acoustic Foam"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "/assets/product-zx7-speaker/mobile/image-gallery-1.jpg",
+        "tablet": "/assets/product-zx7-speaker/tablet/image-gallery-1.jpg",
+        "desktop": "/assets/product-zx7-speaker/desktop/image-gallery-1.jpg"
+      },
+      "second": {
+        "mobile": "/assets/product-zx7-speaker/mobile/image-gallery-2.jpg",
+        "tablet": "/assets/product-zx7-speaker/tablet/image-gallery-2.jpg",
+        "desktop": "/assets/product-zx7-speaker/desktop/image-gallery-2.jpg"
+      },
+      "third": {
+        "mobile": "/assets/product-zx7-speaker/mobile/image-gallery-3.jpg",
+        "tablet": "/assets/product-zx7-speaker/tablet/image-gallery-3.jpg",
+        "desktop": "/assets/product-zx7-speaker/desktop/image-gallery-3.jpg"
+      }
+    },
+    "others": [
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-zx9-speaker.jpg",
+          "tablet": "/assets/shared/tablet/image-zx9-speaker.jpg",
+          "desktop": "/assets/shared/desktop/image-zx9-speaker.jpg"
+        }
+      },
+      {
+        "slug": "xx99-mark-two-headphones",
+        "name": "XX99 Mark II",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg"
+        }
+      },
+      {
+        "slug": "xx59-headphones",
+        "name": "XX59",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx59-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx59-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx59-headphones.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "yx1-earphones",
+    "name": "YX1 Wireless Earphones",
+    "image": {
+      "mobile": "/assets/product-yx1-earphones/mobile/image-product.jpg",
+      "tablet": "/assets/product-yx1-earphones/tablet/image-product.jpg",
+      "desktop": "/assets/product-yx1-earphones/desktop/image-product.jpg"
+    },
+    "category": "earphones",
+    "categoryImage": {
+      "mobile": "/assets/category-earphones/mobile/image-yx1.jpg",
+      "tablet": "/assets/category-earphones/tablet/image-yx1.jpg",
+      "desktop": "/assets/category-earphones/desktop/image-yx1.jpg"
+    },
+    "new": true,
+    "price": 599,
+    "description": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity audio even in noisy environments with its active noise cancellation feature.",
+    "features": "The YX1 Wireless Earphones are designed for comfort and convenience. The soft earcups provide a snug fit, while the adjustable headband ensures a secure and comfortable fit for all head sizes. The built-in microphone allows for clear communication during calls.",
+    "includes": [
+      {
+        "quantity": 2,
+        "item": "Earphone Unit"
+      },
+      {
+        "quantity": 6,
+        "item": "Multi Size Earplugs"
+      },
+      {
+        "quantity": 1,
+        "item": "User Manual"
+      },
+      {
+        "quantity": 1,
+        "item": "USB-C Charging Cable"
+      },
+      {
+        "quantity": 1,
+        "item": "Travel Pouch"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "/assets/product-yx1-earphones/mobile/image-gallery-1.jpg",
+        "tablet": "/assets/product-yx1-earphones/tablet/image-gallery-1.jpg",
+        "desktop": "/assets/product-yx1-earphones/desktop/image-gallery-1.jpg"
+      },
+      "second": {
+        "mobile": "/assets/product-yx1-earphones/mobile/image-gallery-2.jpg",
+        "tablet": "/assets/product-yx1-earphones/tablet/image-gallery-2.jpg",
+        "desktop": "/assets/product-yx1-earphones/desktop/image-gallery-2.jpg"
+      },
+      "third": {
+        "mobile": "/assets/product-yx1-earphones/mobile/image-gallery-3.jpg",
+        "tablet": "/assets/product-yx1-earphones/tablet/image-gallery-3.jpg",
+        "desktop": "/assets/product-yx1-earphones/desktop/image-gallery-3.jpg"
+      }
+    },
+    "others": [
+      {
+        "slug": "xx99-mark-two-headphones",
+        "name": "XX99 Mark II",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx99-mark-two-headphones.jpg"
+        }
+      },
+      {
+        "slug": "xx59-headphones",
+        "name": "XX59",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-xx59-headphones.jpg",
+          "tablet": "/assets/shared/tablet/image-xx59-headphones.jpg",
+          "desktop": "/assets/shared/desktop/image-xx59-headphones.jpg"
+        }
+      },
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "image": {
+          "mobile": "/assets/shared/mobile/image-zx9-speaker.jpg",
+          "tablet": "/assets/shared/tablet/image-zx9-speaker.jpg",
+          "desktop": "/assets/shared/desktop/image-zx9-speaker.jpg"
+        }
+      }
+    ]
+  }
+]

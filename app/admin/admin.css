@@ -1,0 +1,73 @@
+/* Admin-specific styles */
+
+/* Make sure the admin content doesn't go under the fixed header */
+.pt-16 {
+  padding-top: 4rem;
+}
+
+/* Form styles */
+.form-input,
+.form-textarea,
+.form-select,
+.form-checkbox {
+  @apply border-gray-300 rounded-md shadow-sm focus:border-orange-300 focus:ring focus:ring-orange-200 focus:ring-opacity-50;
+}
+
+/* Button styles */
+.btn {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500;
+}
+
+.btn-outline {
+  @apply border-gray-300 text-gray-700 bg-white hover:bg-gray-50;
+}
+
+/* Table styles */
+.table-container {
+  @apply overflow-x-auto;
+}
+
+.table {
+  @apply min-w-full divide-y divide-gray-200;
+}
+
+.table th {
+  @apply px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+}
+
+.table td {
+  @apply px-6 py-4 whitespace-nowrap;
+}
+
+/* Alert styles */
+.alert {
+  @apply p-4 rounded-md;
+}
+
+.alert-error {
+  @apply bg-red-50 border-l-4 border-red-400 p-4;
+}
+
+.alert-success {
+  @apply bg-green-50 border-l-4 border-green-400 p-4;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  @apply animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-orange-500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .table-container {
+    @apply -mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8;
+  }
+  
+  .table {
+    @apply min-w-full divide-y divide-gray-200;
+  }
+  
+  .table-container {
+    @apply py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8;
+  }
+}
