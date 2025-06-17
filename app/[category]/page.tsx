@@ -64,7 +64,7 @@ export default function CategoryPage() {
                 <h2 className="text-3xl font-bold mb-6">{product.name}</h2>
                 <p className="text-gray-600 mb-8">{product.description}</p>
                 <Link href={`/product/${product.slug}`}>
-                  <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8">
+                  <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 rounded-none">
                     SEE PRODUCT
                   </Button>
                 </Link>

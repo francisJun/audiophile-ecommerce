@@ -352,7 +352,7 @@ export default function ProductPage() {
                   />
                   <h3 className="text-xl font-bold mb-4">{item.name}</h3>
                   <Link href={`/product/${item.slug}`}>
-                    <Button className="bg-orange-500 hover:bg-orange-600 text-white">
+                    <Button className="bg-orange-500 hover:bg-orange-600 text-white rounded-none">
                       SEE PRODUCT
                     </Button>
                   </Link>
