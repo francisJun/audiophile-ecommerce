@@ -13,7 +13,7 @@ A modern, responsive e-commerce website for high-end audio equipment. Built with
 - 📱 **Fully Responsive**: Works on desktop, tablet, and mobile devices
 - ⚡ **Fast & Optimized**: Built with Next.js for optimal performance
 
-Live Demo: [https://audiophile-ecommerce.vercel.app/](https://audiophile-ecommerce.vercel.app/)
+Live Demo: [https://audiophile-ecommerce-dun.vercel.app/](https://audiophile-ecommerce-dun.vercel.app/)
 
 ## Tech Stack
 
