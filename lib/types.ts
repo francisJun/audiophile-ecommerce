@@ -54,7 +54,11 @@ export interface CartItem {
   name: string
   price: number
   quantity: number
-  image: string
+  image: {
+    mobile: string
+    tablet: string
+    desktop: string
+  }
 }
 
 export interface OrderSummary {

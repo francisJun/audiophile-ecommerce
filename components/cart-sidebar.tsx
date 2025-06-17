@@ -4,7 +4,7 @@ import { useCart } from "@/lib/cart-context";
 import { X, Plus, Minus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import Image from "next/image";
+import { ResponsiveImage } from "./ui/responsive-image";
 
 export default function CartSidebar() {
   const { state, dispatch } = useCart();
@@ -16,6 +16,8 @@ export default function CartSidebar() {
     0
   );
   const totalItems = state.items.reduce((sum, item) => sum + item.quantity, 0);
+
+  console.log(state.items);
 
   return (
     <div className="fixed inset-0 z-50 bg-black bg-opacity-50">
@@ -47,13 +49,15 @@ export default function CartSidebar() {
 
               {state.items.map(item => (
                 <div key={item.id} className="flex items-center space-x-4">
-                  <Image
-                    src={item.image || "/placeholder.svg?height=64&width=64"}
-                    alt={item.name}
-                    width={64}
-                    height={64}
-                    className="rounded"
-                  />
+                  <div className="w-16 h-16 relative rounded overflow-hidden">
+                    <ResponsiveImage
+                      sources={item.image}
+                      alt={item.name}
+                      fill
+                      className="object-cover"
+                      sizes="64px"
+                    />
+                  </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-sm">{item.name}</h3>
                     <p className="text-gray-600 text-sm">

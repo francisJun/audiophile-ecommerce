@@ -34,7 +34,28 @@ const loadCart = (): CartState => {
   
   try {
     const savedCart = localStorage.getItem(CART_STORAGE_KEY);
-    return savedCart ? JSON.parse(savedCart) : { items: [], isOpen: false };
+    if (!savedCart) return { items: [], isOpen: false };
+    
+    const parsedCart = JSON.parse(savedCart);
+    
+    // Ensure items have the correct image structure
+    const normalizedItems = parsedCart.items.map((item: any) => ({
+      ...item,
+      // If image is a string (old format), convert it to the new format
+      image: typeof item.image === 'string' 
+        ? { 
+            mobile: item.image, 
+            tablet: item.image, 
+            desktop: item.image 
+          }
+        : item.image
+    }));
+    
+    return {
+      ...parsedCart,
+      items: normalizedItems,
+      isOpen: parsedCart.isOpen || false
+    };
   } catch (error) {
     console.error('Failed to load cart from localStorage', error);
     return { items: [], isOpen: false };

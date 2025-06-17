@@ -4,7 +4,14 @@ import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { useCart } from "@/lib/cart-context";
 import { Button } from "@/components/ui/button";
-import { Plus, Minus, ChevronLeft, X, ChevronLeft as ChevronLeftIcon, ChevronRight } from "lucide-react";
+import {
+  Plus,
+  Minus,
+  ChevronLeft,
+  X,
+  ChevronLeft as ChevronLeftIcon,
+  ChevronRight
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -16,8 +23,16 @@ type GalleryImage = {
   alt: string;
 };
 
-const GalleryImage = ({ src, alt, onClick }: { src: string; alt: string; onClick: () => void }) => (
-  <motion.div 
+const GalleryImage = ({
+  src,
+  alt,
+  onClick
+}: {
+  src: string;
+  alt: string;
+  onClick: () => void;
+}) => (
+  <motion.div
     className="relative w-full h-full cursor-pointer group"
     whileHover={{ scale: 1.02 }}
     transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -39,42 +54,51 @@ const GalleryImage = ({ src, alt, onClick }: { src: string; alt: string; onClick
   </motion.div>
 );
 
-const Lightbox = ({ images, currentIndex, onClose, onNext, onPrev }: { 
-  images: GalleryImage[]; 
-  currentIndex: number; 
-  onClose: () => void; 
-  onNext: () => void; 
-  onPrev: () => void 
+const Lightbox = ({
+  images,
+  currentIndex,
+  onClose,
+  onNext,
+  onPrev
+}: {
+  images: GalleryImage[];
+  currentIndex: number;
+  onClose: () => void;
+  onNext: () => void;
+  onPrev: () => void;
 }) => (
-  <motion.div 
+  <motion.div
     className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
     onClick={onClose}
   >
-    <button 
+    <button
       className="absolute top-4 right-4 text-white hover:text-orange-500 transition-colors"
-      onClick={(e) => {
+      onClick={e => {
         e.stopPropagation();
         onClose();
       }}
     >
       <X className="h-8 w-8" />
     </button>
-    
-    <button 
+
+    <button
       className="absolute left-4 text-white hover:text-orange-500 transition-colors z-10"
-      onClick={(e) => {
+      onClick={e => {
         e.stopPropagation();
         onPrev();
       }}
     >
       <ChevronLeftIcon className="h-12 w-12" />
     </button>
-    
-    <div className="relative w-full max-w-4xl h-full max-h-[80vh]" onClick={e => e.stopPropagation()}>
-      <motion.div 
+
+    <div
+      className="relative w-full max-w-4xl h-full max-h-[80vh]"
+      onClick={e => e.stopPropagation()}
+    >
+      <motion.div
         key={currentIndex}
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -91,17 +115,17 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrev }: {
         />
       </motion.div>
     </div>
-    
-    <button 
+
+    <button
       className="absolute right-4 text-white hover:text-orange-500 transition-colors z-10"
-      onClick={(e) => {
+      onClick={e => {
         e.stopPropagation();
         onNext();
       }}
     >
       <ChevronRight className="h-12 w-12" />
     </button>
-    
+
     <div className="absolute bottom-4 left-0 right-0 text-center text-white text-sm">
       {currentIndex + 1} / {images.length}
     </div>
@@ -116,12 +140,20 @@ export default function ProductPage() {
   const [quantity, setQuantity] = useState(1);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-  const galleryImages = product ? [
-    { src: product.gallery.first.desktop, alt: `${product.name} gallery 1` },
-    { src: product.gallery.second.desktop, alt: `${product.name} gallery 2` },
-    { src: product.gallery.third.desktop, alt: `${product.name} gallery 3` },
-  ] : [];
+
+  const galleryImages = product
+    ? [
+        {
+          src: product.gallery.first.desktop,
+          alt: `${product.name} gallery 1`
+        },
+        {
+          src: product.gallery.second.desktop,
+          alt: `${product.name} gallery 2`
+        },
+        { src: product.gallery.third.desktop, alt: `${product.name} gallery 3` }
+      ]
+    : [];
 
   useEffect(() => {
     const foundProduct = productsData.find(
@@ -152,7 +184,11 @@ export default function ProductPage() {
         name: product.name,
         price: product.price,
         quantity,
-        image: "/placeholder.svg?height=64&width=64"
+        image: {
+          mobile: product.image.mobile,
+          tablet: product.image.tablet,
+          desktop: product.image.desktop
+        }
       }
     });
   };
@@ -245,8 +281,8 @@ export default function ProductPage() {
           <div className="grid md:grid-cols-3 gap-4 mb-16">
             <div className="space-y-4">
               <div className="relative w-full aspect-square rounded-lg overflow-hidden">
-                <GalleryImage 
-                  src={product.gallery.first.desktop} 
+                <GalleryImage
+                  src={product.gallery.first.desktop}
                   alt={`${product.name} gallery 1`}
                   onClick={() => {
                     setCurrentImageIndex(0);
@@ -255,8 +291,8 @@ export default function ProductPage() {
                 />
               </div>
               <div className="relative w-full aspect-square rounded-lg overflow-hidden">
-                <GalleryImage 
-                  src={product.gallery.second.desktop} 
+                <GalleryImage
+                  src={product.gallery.second.desktop}
                   alt={`${product.name} gallery 2`}
                   onClick={() => {
                     setCurrentImageIndex(1);
@@ -267,8 +303,8 @@ export default function ProductPage() {
             </div>
             <div className="md:col-span-2">
               <div className="relative w-full aspect-[4/3] md:aspect-[16/9] rounded-lg overflow-hidden">
-                <GalleryImage 
-                  src={product.gallery.third.desktop} 
+                <GalleryImage
+                  src={product.gallery.third.desktop}
                   alt={`${product.name} gallery 3`}
                   onClick={() => {
                     setCurrentImageIndex(2);
@@ -278,15 +314,24 @@ export default function ProductPage() {
               </div>
             </div>
           </div>
-          
+
           <AnimatePresence>
             {lightboxOpen && (
               <Lightbox
                 images={galleryImages}
                 currentIndex={currentImageIndex}
                 onClose={() => setLightboxOpen(false)}
-                onNext={() => setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length)}
-                onPrev={() => setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length)}
+                onNext={() =>
+                  setCurrentImageIndex(
+                    prev => (prev + 1) % galleryImages.length
+                  )
+                }
+                onPrev={() =>
+                  setCurrentImageIndex(
+                    prev =>
+                      (prev - 1 + galleryImages.length) % galleryImages.length
+                  )
+                }
               />
             )}
           </AnimatePresence>
