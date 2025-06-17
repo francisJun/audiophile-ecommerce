@@ -39,7 +39,7 @@ const loadCart = (): CartState => {
     const parsedCart = JSON.parse(savedCart);
     
     // Ensure items have the correct image structure
-    const normalizedItems = parsedCart.items.map((item: any) => ({
+    const normalizedItems = parsedCart.items?.map((item: any) => ({
       ...item,
       // If image is a string (old format), convert it to the new format
       image: typeof item.image === 'string' 
@@ -49,12 +49,12 @@ const loadCart = (): CartState => {
             desktop: item.image 
           }
         : item.image
-    }));
+    })) || [];
     
+    // Always return with isOpen: false to ensure cart starts closed
     return {
-      ...parsedCart,
       items: normalizedItems,
-      isOpen: parsedCart.isOpen || false
+      isOpen: false
     };
   } catch (error) {
     console.error('Failed to load cart from localStorage', error);
@@ -64,12 +64,16 @@ const loadCart = (): CartState => {
 
 // Save cart to localStorage
 const saveCart = (state: CartState) => {
-  if (typeof window !== 'undefined') {
-    try {
-      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(state));
-    } catch (error) {
-      console.error('Failed to save cart to localStorage', error);
-    }
+  if (typeof window === 'undefined') return;
+  
+  try {
+    // Save both items and isOpen state to localStorage
+    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify({
+      items: state.items,
+      isOpen: state.isOpen
+    }));
+  } catch (error) {
+    console.error('Failed to save cart to localStorage', error);
   }
 };
 
@@ -140,7 +144,7 @@ function cartReducer(state: CartState, action: CartAction): CartState {
         ...state,
         isOpen: !state.isOpen,
       };
-      // Don't save to localStorage for UI state changes
+      saveCart(newState);
       return newState;
       
     case "CLOSE_CART":
@@ -148,7 +152,7 @@ function cartReducer(state: CartState, action: CartAction): CartState {
         ...state,
         isOpen: false,
       };
-      // Don't save to localStorage for UI state changes
+      saveCart(newState);
       return newState;
       
     default:
