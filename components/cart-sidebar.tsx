@@ -17,8 +17,6 @@ export default function CartSidebar() {
   );
   const totalItems = state.items.reduce((sum, item) => sum + item.quantity, 0);
 
-  console.log(state.items);
-
   return (
     <div className="fixed inset-0 z-50 bg-black bg-opacity-50">
       <div className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-lg">

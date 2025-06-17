@@ -1,9 +1,12 @@
-"use client"
+"use client";
 
-import Image, { ImageProps } from "next/image"
-import { useEffect, useState } from 'react';
+import Image, { ImageProps } from "next/image";
+import { useEffect, useState } from "react";
 
-type ResponsiveImageBaseProps = Omit<ImageProps, 'src' | 'width' | 'height' | 'fill'> & {
+type ResponsiveImageBaseProps = Omit<
+  ImageProps,
+  "src" | "width" | "height" | "fill"
+> & {
   sources: {
     mobile: string;
     tablet: string;
@@ -24,16 +27,18 @@ type ResponsiveImageWithDimensions = ResponsiveImageBaseProps & {
   height: number;
 };
 
-type ResponsiveImageProps = ResponsiveImageWithFill | ResponsiveImageWithDimensions;
+type ResponsiveImageProps =
+  | ResponsiveImageWithFill
+  | ResponsiveImageWithDimensions;
 
-export function ResponsiveImage({ 
-  sources, 
-  alt, 
-  className = '', 
-  sizes = '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw',
-  ...props 
+export function ResponsiveImage({
+  sources,
+  alt,
+  className = "",
+  sizes = "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw",
+  ...props
 }: ResponsiveImageProps) {
-  const [currentSrc, setCurrentSrc] = useState(sources.mobile);
+  const [currentSrc, setCurrentSrc] = useState(sources.desktop);
 
   useEffect(() => {
     const updateImageSource = () => {
@@ -50,15 +55,21 @@ export function ResponsiveImage({
     updateImageSource();
 
     // Add event listener for window resize
-    window.addEventListener('resize', updateImageSource);
+    window.addEventListener("resize", updateImageSource);
 
     // Clean up event listener on component unmount
-    return () => window.removeEventListener('resize', updateImageSource);
+    return () => window.removeEventListener("resize", updateImageSource);
   }, [sources]);
 
   // If fill is true, we don't pass width/height
-  if ('fill' in props && props.fill === true) {
-    const { width, height, alt: _, fill: __, ...restProps } = props as ResponsiveImageWithFill;
+  if ("fill" in props && props.fill === true) {
+    const {
+      width,
+      height,
+      alt: _,
+      fill: __,
+      ...restProps
+    } = props as ResponsiveImageWithFill;
     return (
       <Image
         src={currentSrc}
@@ -72,7 +83,13 @@ export function ResponsiveImage({
   }
 
   // Otherwise, we use width/height
-  const { width, height, fill, alt: _, ...restProps } = props as ResponsiveImageWithDimensions;
+  const {
+    width,
+    height,
+    fill,
+    alt: _,
+    ...restProps
+  } = props as ResponsiveImageWithDimensions;
   return (
     <Image
       src={currentSrc}

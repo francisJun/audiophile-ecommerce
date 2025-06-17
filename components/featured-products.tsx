@@ -27,8 +27,8 @@ export default function FeaturedProducts() {
                   desktop: "/assets/home/desktop/image-speaker-zx9.png"
                 }}
                 alt="ZX9 Speaker"
-                width={200}
-                height={240}
+                width={1400}
+                height={1600}
                 className="w-40 sm:w-48 md:w-64 lg:w-80 h-auto object-contain"
                 priority
               />
@@ -53,35 +53,30 @@ export default function FeaturedProducts() {
         </div>
 
         {/* ZX7 Speaker */}
-        <div className="bg-gray-100 rounded-lg overflow-hidden">
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-            <div className="p-8 sm:p-12 md:p-16 order-2 md:order-1">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
-                ZX7 SPEAKER
-              </h2>
-              <Link href="/product/zx7-speaker" className="inline-block">
-                <Button
-                  variant="outline"
-                  className="border-black text-black hover:bg-black hover:text-white px-6 sm:px-8 py-3 rounded-none text-sm sm:text-base"
-                >
-                  SEE PRODUCT
-                </Button>
-              </Link>
-            </div>
-            <div className="h-48 sm:h-64 md:h-80 lg:h-96 w-full order-1 md:order-2">
-              <ResponsiveImage
-                sources={{
-                  mobile: "/assets/home/mobile/image-speaker-zx7.jpg",
-                  tablet: "/assets/home/tablet/image-speaker-zx7.jpg",
-                  desktop: "/assets/home/desktop/image-speaker-zx7.jpg"
-                }}
-                alt="ZX7 Speaker"
-                width={1400}
-                height={1600}
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
+        <div className="relative rounded-lg overflow-hidden h-80 sm:h-96 md:h-[32rem] w-full">
+          <div className="absolute inset-0 w-full h-full">
+            <ResponsiveImage
+              sources={{
+                mobile: "/assets/home/mobile/image-speaker-zx7.jpg",
+                tablet: "/assets/home/tablet/image-speaker-zx7.jpg",
+                desktop: "/assets/home/desktop/image-speaker-zx7.jpg"
+              }}
+              alt="ZX7 Speaker"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <div className="relative h-full flex flex-col justify-center pl-6 sm:pl-16 md:pl-24 max-w-md">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">ZX7 SPEAKER</h2>
+            <Link href="/product/zx7-speaker" className="inline-block">
+              <Button
+                variant="outline"
+                className="border-black text-black hover:bg-black hover:text-white px-6 sm:px-8 py-3 rounded-none text-sm sm:text-base"
+              >
+                SEE PRODUCT
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -113,41 +108,6 @@ export default function FeaturedProducts() {
                 SEE PRODUCT
               </Button>
             </Link>
-          </div>
-        </div>
-
-        {/* Best Gear */}
-        <div className="bg-white rounded-lg overflow-hidden">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
-            <div className="p-8 sm:p-12 md:p-16 order-2 md:order-1 text-center md:text-left">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
-                BRINGING YOU THE <span className="text-orange-500">BEST</span>{" "}
-                AUDIO GEAR
-              </h2>
-              <p className="text-gray-600 text-sm sm:text-base">
-                Located at the heart of New York City, Audiophile is the premier
-                store for high end headphones, earphones, speakers, and audio
-                accessories. We have a large showroom and luxury demonstration
-                rooms available for you to browse and experience a wide range of
-                our products. Stop by our store to meet some of the fantastic
-                people who make Audiophile the best place to buy your portable
-                audio equipment.
-              </p>
-            </div>
-            <div className="h-64 sm:h-80 md:h-96 w-full order-1 md:order-2 rounded-lg overflow-hidden">
-              <ResponsiveImage
-                sources={{
-                  mobile: "/assets/shared/mobile/image-best-gear.jpg",
-                  tablet: "/assets/shared/tablet/image-best-gear.jpg",
-                  desktop: "/assets/shared/desktop/image-best-gear.jpg"
-                }}
-                alt="Best Audio Gear"
-                width={1400}
-                height={1000}
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
           </div>
         </div>
       </div>

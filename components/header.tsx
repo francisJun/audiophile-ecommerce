@@ -1,21 +1,24 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { ShoppingCart, Menu } from "lucide-react"
-import { useCart } from "@/lib/cart-context"
-import { useState } from "react"
+import Link from "next/link";
+import { ShoppingCart, Menu } from "lucide-react";
+import { useCart } from "@/lib/cart-context";
+import { useState } from "react";
 
 export default function Header() {
-  const { state, dispatch } = useCart()
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { state, dispatch } = useCart();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const totalItems = state.items.reduce((sum, item) => sum + item.quantity, 0)
+  const totalItems = state.items.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <header className="bg-black text-white">
+    <header className="bg-black/95 text-white">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-4 border-b border-gray-800">
-          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <div className="flex items-center justify-between py-4 border-b border-gray-600">
+          <button
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
             <Menu className="h-6 w-6" />
           </button>
 
@@ -27,13 +30,22 @@ export default function Header() {
             <Link href="/" className="hover:text-orange-500 transition-colors">
               HOME
             </Link>
-            <Link href="/headphones" className="hover:text-orange-500 transition-colors">
+            <Link
+              href="/headphones"
+              className="hover:text-orange-500 transition-colors"
+            >
               HEADPHONES
             </Link>
-            <Link href="/speakers" className="hover:text-orange-500 transition-colors">
+            <Link
+              href="/speakers"
+              className="hover:text-orange-500 transition-colors"
+            >
               SPEAKERS
             </Link>
-            <Link href="/earphones" className="hover:text-orange-500 transition-colors">
+            <Link
+              href="/earphones"
+              className="hover:text-orange-500 transition-colors"
+            >
               EARPHONES
             </Link>
           </nav>
@@ -53,21 +65,33 @@ export default function Header() {
 
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 space-y-4">
-            <Link href="/" className="block hover:text-orange-500 transition-colors">
+            <Link
+              href="/"
+              className="block hover:text-orange-500 transition-colors"
+            >
               HOME
             </Link>
-            <Link href="/headphones" className="block hover:text-orange-500 transition-colors">
+            <Link
+              href="/headphones"
+              className="block hover:text-orange-500 transition-colors"
+            >
               HEADPHONES
             </Link>
-            <Link href="/speakers" className="block hover:text-orange-500 transition-colors">
+            <Link
+              href="/speakers"
+              className="block hover:text-orange-500 transition-colors"
+            >
               SPEAKERS
             </Link>
-            <Link href="/earphones" className="block hover:text-orange-500 transition-colors">
+            <Link
+              href="/earphones"
+              className="block hover:text-orange-500 transition-colors"
+            >
               EARPHONES
             </Link>
           </nav>
         )}
       </div>
     </header>
-  )
+  );
 }
