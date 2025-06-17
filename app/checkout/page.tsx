@@ -186,7 +186,7 @@ export default function CheckoutPage() {
           </p>
           <Button
             onClick={() => router.push("/")}
-            className="bg-orange-500 hover:bg-orange-600"
+            className="bg-orange-500 hover:bg-orange-600 rounded-none"
           >
             Continue Shopping
           </Button>
@@ -601,7 +601,7 @@ export default function CheckoutPage() {
             <Button
               onClick={handleSubmit}
               disabled={isProcessing}
-              className="w-full bg-orange-500 hover:bg-orange-600 text-white disabled:opacity-50"
+              className="w-full bg-orange-500 hover:bg-orange-600 text-white disabled:opacity-50 rounded-none"
             >
               {isProcessing ? (
                 <>
