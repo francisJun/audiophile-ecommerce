@@ -11,7 +11,13 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Loader2, CheckCircle, CreditCard, Truck } from "lucide-react";
+import {
+  Loader2,
+  CheckCircle,
+  CreditCard,
+  Truck,
+  ChevronLeft
+} from "lucide-react";
 
 interface FormData {
   name: string;
@@ -199,10 +205,11 @@ export default function CheckoutPage() {
     <div className="bg-gray-50 min-h-screen py-8">
       <div className="container mx-auto px-4">
         <Button
-          variant="ghost"
+          variant="outline"
           onClick={() => router.back()}
-          className="mb-8 text-gray-600 hover:text-black"
+          className="mb-8 text-gray-600 hover:text-black flex items-center gap-2 rounded-none"
         >
+          <ChevronLeft className="h-4 w-4" />
           Go Back
         </Button>
 
